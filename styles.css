@@ -6,9 +6,7 @@
 
 body {
     font-family: Roboto;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
@@ -16,15 +14,21 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    gap: 36px;
+    gap: 64px;
 }
 
 .header,
 .footer {
+    min-height: 40vh;
     background-color: #1f2937;
-}
+    padding-left: 12%;
+    padding-right: 12%;
+    color: #e5e7eb;
+    font-size: 18px;
 
-.header {
+    display: flex;
+    flex-direction: column;
+
     flex: 1;
 }
 
@@ -43,21 +47,87 @@ body {
     font-size: 24px;
 }
 
-button, 
-.CTA-content {
+.header-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 48px 0px;
+    gap: 48px;
+
+    flex: 1 1 200px;
+} 
+
+.h-content{
+    flex: 1;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;    
+}
+
+.header-info p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.h-image {
+    min-height: 200px;
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+}
+
+button{
+    min-height: 25px;
+    min-width: 80px;
     background-color: #3882F6;
+    border: none;
+    border-radius: 5px;
     color: #f9faf8;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .main-content {
     flex: 1;
-    text-align: center;
 }
 
 h2 {
+    text-align: center;
     color: #1f2937;
     font-size: 36px;
     font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.figures{
+    padding-left: 18%;
+    padding-right: 18%;
+    margin-bottom: 78px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.figures figure{
+    max-width: 150px;
+    font-size: 18px;
+    flex: 1 1 auto;
+}
+
+.figures img{
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 16px;
+    border: 3px solid lightskyblue;
 }
 
 .quote-content {
@@ -65,18 +135,52 @@ h2 {
     color: #1f2937;
     font-size: 36px;
     font-weight: 300;
+    padding-left: 22%;
+    padding-right: 22%;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.quote-content p{
+    padding-top: 75px;
 }
 
 .quote-credit {
+    padding-bottom: 75px;
     font-size: 24px;
 }
 
+.CTA-content{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 40px 175px;
+    border-radius: 5px;
+    background-color: #3882F6;
+    color: #f9faf8;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.CTA-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+.CTA-button button{
+    border: 2px solid white;
+}
+
 .footer {
-    flex: 1;
+    min-height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color: #e5e7eb;
-    font-size: 18px;
 }
