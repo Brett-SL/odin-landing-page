@@ -32,6 +32,13 @@ body {
     flex: 1;
 }
 
+a, a:visited, a:hover, a:focus, 
+a:active{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
 .navbar {
     display: flex;
     justify-content: flex-end;
