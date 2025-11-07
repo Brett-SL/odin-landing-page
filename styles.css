@@ -101,6 +101,9 @@ button{
 }
 
 .main-content {
+    display: flex;
+    flex-direction: column;
+
     flex: 1;
 }
 
@@ -129,8 +132,6 @@ h2 {
 }
 
 .figures img{
-    /*padding-left: 10%;
-    padding-right: 10%;*/
     min-width: 150px;
     min-height: 150px;
     border-radius: 16px;
@@ -163,7 +164,7 @@ h2 {
 .CTA-content{
     margin-left: 10%;
     margin-right: 10%;
-    padding: 40px 175px;
+    padding: 40px 75px;
     border-radius: 5px;
     background-color: #3882F6;
     color: #f9faf8;
@@ -171,6 +172,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+
+    flex: 1;
 }
 
 .CTA-text{
